@@ -21,6 +21,6 @@ jobs:
       #     args: "run --files ${{ steps.file_changes.outputs.files }}"
 
       - name: Run dbt checkpoint
-        uses: dbt-checkpoint/dbt-checkpoint@v1.2.0
+        uses: dbt-checkpoint/dbt-checkpoint@fix-github-action
         with:
           args: run --all-files
