@@ -13,12 +13,6 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v2
 
-      - name: Identify file changes
-        id: file_changes
-        uses: trilom/file-changes-action@v1.2.4
-        with:
-          output: " "
-
       # - name: Run dbt checkpoint
       #   uses: dbt-checkpoint/dbt-checkpoint@v1.2.0
       #   env:
